@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    color: black;
+    margin: 5%;
+    font-family: sans-serif;
+}
+h2 {
+    text-align: center;
+    background-color: rgb(110, 231, 252);
+}
+img {
+    float: right;
+    margin-right: 5%;
+}
+label[for="firstName"], [for="lastName"] {
+    color: rgb(51, 99, 255);
+}
+label[for="email"] {
+    color: brown;
+}
+label[for="password"], [for="confirmPassword"] {
+    color: rgb(255, 48, 48);
+}
+label[for="dob"] {
+    color: coral;
+}
+label[for="gender"] {
+    color: cornflowerblue;
+}
+label[for="hobbies"] {
+    color: gold;
+}
+label[for="country"] {
+    color: green;
+}
+#reg {
+    color: rgb(199, 246, 255);
+    font-family: 'Trebuchet MS';
+    border-style: none;
+    padding: 5px 10px;
+    background-color: rgb(106, 180, 255);
+    font-weight: bold;
+    font-size: small;
+}
