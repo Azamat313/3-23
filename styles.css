@@ -1,2 +1,73 @@
-style.css
-body{}
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+}
+td {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+    outline: none;
+    background: #f9f9f9;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+.gender-group, .hobbies-group {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+.hobbies-group input {
+    accent-color: #4a90e2;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+button {
+    width: 100%;
+    background: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+button:hover {
+    background: #357abd;
+}
