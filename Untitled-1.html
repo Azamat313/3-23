@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://avatars.mds.yandex.net/i?id=302bccedd0a50415235180e0fbe47d91_l-5597741-images-thumbs&n=13') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            color: #000000;
+        }
+
+        .registration-container {
+            background-color: rgba(255, 255, 255, 0.2); 
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            backdrop-filter: blur(10px); 
+            transition: all 0.3s ease;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 26px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border: 2px solid rgba(200, 200, 200, 0.6);
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #ffd700;
+            background-color: rgba(255, 255, 255, 1);
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ffd700;
+            color: #000000;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .form-footer a:hover {
+            color: #ffd700;
+        }
+
+        .registration-container {
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .registration-container {
+                padding: 30px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="registration-container">
+        <h2>Регистрация</h2>
+        <form action="/submit_registration" method="POST">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+            </div>
+            <div class="form-group">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email" required placeholder="Введите вашу почту">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required placeholder="Введите ваш пароль">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Зарегистрироваться">
+            </div>
+        </form>
+        <div class="form-footer">
+            <p>Уже есть аккаунт? <a href="/login">Войти</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
