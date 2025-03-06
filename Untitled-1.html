@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .hobbies label {
+            font-weight: normal;
+            margin-right: 10px;
+        }
+        .gender {
+            display: flex;
+            gap: 15px;
+        }
+        .btn-container {
+            margin-top: 15px;
+            text-align: center;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" minlength="6" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>
+
+            <label>Hobbies/Interests:</label>
+            <div class="hobbies">
+                <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+                <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+                <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+                <label><input type="checkbox" name="hobbies" value="travel"> Travel</label>
+            </div>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="comments">Comments or Additional Information:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <div class="btn-container">
+                <button type="submit">Register</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
