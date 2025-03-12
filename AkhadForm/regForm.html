@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form>
+        <label>First Name: <input type="text" name="first_name" required></label><br>
+        <label>Last Name: <input type="text" name="last_name" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Password: <input type="password" name="password" required></label><br>
+        <label>Confirm Password: <input type="password" name="confirm_password" required></label><br>
+        <label>Date of Birth: <input type="date" name="dob" required></label><br>
+        <label>Gender:
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </label><br>
+        <label>Hobbies:<br>
+            <input type="checkbox" name="hobby" value="Sports"> Sports
+            <input type="checkbox" name="hobby" value="Music"> Music
+            <input type="checkbox" name="hobby" value="Reading"> Reading
+        </label><br>
+        <label>Country:
+            <select name="country">
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+            </select>
+        </label><br>
+        <label>Comments:<br>
+            <textarea name="comments"></textarea>
+        </label><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
