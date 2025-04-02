@@ -379,6 +379,8 @@ body {
 .footer-column {
     flex: 1; /* added */
     min-width: 200px; /* added */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
