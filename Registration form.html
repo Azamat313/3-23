@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <style>
+    /* Reset some basic elements */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #333;
+    }
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .radio-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .radio-group label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #555;
+    }
+    .radio-group input {
+      margin-right: 5px;
+    }
+    .checkbox-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .submit-btn {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <h2>Register</h2>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required />
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required />
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required />
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required />
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="gender" value="Male" required />
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="Female" required />
+        Female
+      </label>
+    </div>
+
+    <label>Hobbies/Interests:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="hobbies" value="Sports" /> Sports</label>
+      <label><input type="checkbox" name="hobbies" value="Music" /> Music</label>
+      <label><input type="checkbox" name="hobbies" value="Travel" /> Travel</label>
+    </div>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="" disabled selected>Select a country</option>
+      <option value="USA">USA</option>
+      <option value="Canada">Canada</option>
+      <option value="UK">UK</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="Kazakhstan">Kazakhstanw</option>
+    </select>
+
+    <label for="comments">Comments or Additional Information:</label>
+    <textarea id="comments" name="comments" rows="3"></textarea>
+
+    <input type="submit" class="submit-btn" value="Submit" />
+  </form>
+</body>
+</html>
