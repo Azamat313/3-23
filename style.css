@@ -379,6 +379,9 @@ body {
 .footer-column {
     flex: 1; /* added */
     min-width: 200px; /* added */
+}
+
+.footer-column li {
     display: flex;
     flex-wrap: wrap;
 }
