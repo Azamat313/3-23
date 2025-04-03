@@ -1,0 +1,276 @@
+/* Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container of all page */
+body {
+    background-color: #000000;
+    color: #0011ff8f;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background: #222;
+    padding: 15px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: rgb(151, 58, 58);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 🚀 Hero-section*/
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.primary-button, .secondary-button {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-button {
+    background: #007bff;
+    color: white;
+}
+
+.secondary-button {
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 🔥 Section "Why we?" */
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎯 Reports */
+.testimonials-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔗 Footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    background: #222;
+    color: white;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    background: #111;
+    color: white;
+    padding: 10px;
+}
+
+/* ========================= */
+/* ✅ Adaptation on column*/
+/* ========================= */
+
+/* 🖥  Tablets */
+@media screen and (max-width: 1024px) {
+    .hero-container, .features-container {
+        flex-direction: column; 
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* 📱 Smartphones */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero-container {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondary-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 90%;
+    }
+}
+
+/* 📲 Small Screens */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .primary-button, .secondary-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
