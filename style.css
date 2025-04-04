@@ -381,6 +381,12 @@ body {
         text-align: center;
         height: auto;
         padding: 20px 0;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white; 
+        z-index: 1000;
     }
 
     .nav-links {
