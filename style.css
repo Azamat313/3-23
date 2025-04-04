@@ -61,23 +61,23 @@ body {
 .hero {
     min-height: 700px;
     background: linear-gradient(135deg, #4A6CF7 0%, #8A74F9 100%);
-    padding: 120px 20px 60px; /* added */
+    padding: 120px 20px 60px;
     color: white;
 }
 
 .hero-container {
-    width: 100%; /* added */
+    width: 100%; 
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap; /* added */
-    justify-content: center; /* added */
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 40px; /* added */
+    gap: 40px;
 }
 
 .hero-content {
-    flex: 1; /* added */
+    flex: 1; 
     min-width: 300px; 
     max-width: 600px;
 }
@@ -96,8 +96,8 @@ body {
 
 .hero-buttons {
     display: flex;
-    flex-wrap: wrap; /* added */
-    gap: 15px; /* added */
+    flex-wrap: wrap; 
+    gap: 15px; 
 }
 
 .primary-button {
@@ -110,9 +110,9 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s;
-    flex: 1; /* added */
-    min-width: 150px; /* added */
-    text-align: center; /* added */
+    flex: 1; 
+    min-width: 150px;
+    text-align: center;
 }
 
 .primary-button:hover {
@@ -129,9 +129,9 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s;
-    flex: 1; /* added */
-    min-width: 150px; /* added */
-    text-align: center; /* added */
+    flex: 1; 
+    min-width: 150px; 
+    text-align: center;
 }
 
 .secondary-button:hover {
@@ -139,7 +139,7 @@ body {
 }
 
 .hero-image {
-    flex: 1; /* added */
+    flex: 1; 
     min-width: 300px; 
     max-width: 550px;
     height: 400px;
@@ -149,10 +149,10 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* added */
+    overflow: hidden; 
 }
 
-.hero-image img { /* added */
+.hero-image img { 
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -160,7 +160,7 @@ body {
 
 /* Features Section */
 .features {
-    padding: 80px 20px; /* added */
+    padding: 80px 20px; 
     background-color: #F8F9FF;
 }
 
@@ -175,24 +175,24 @@ body {
     max-width: 600px;
     margin: 0 auto 60px;
     color: #666;
-    padding: 0 20px; /* added */
+    padding: 0 20px; 
 }
 
 .features-container {
-    width: 100%; /* added */
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap; /* added */
-    justify-content: center; /* added */
-    gap: 30px; /* added */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px;
 }
 
 .feature-card {
-    width: 100%; /* added */
+    width: 100%;
     max-width: 370px;
     background-color: white;
-    padding: 30px; /* added */
+    padding: 30px; 
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
@@ -227,18 +227,18 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 80px 20px; /* added */
+    padding: 80px 20px;
 }
 
 .testimonials-container {
-    width: 100%; /* added */
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .testimonial-card {
     background-color: white;
-    padding: 30px; /* added */
+    padding: 30px; 
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -277,13 +277,13 @@ body {
 
 /* CTA Section */
 .cta {
-    padding: 80px 20px; /* added */
+    padding: 80px 20px;
     background-color: #4A6CF7;
     color: white;
 }
 
 .cta-container {
-    width: 100%; /* added */
+    width: 100%; 
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -298,7 +298,7 @@ body {
     max-width: 600px;
     margin: 0 auto 40px;
     opacity: 0.9;
-    padding: 0 20px; /* added */
+    padding: 0 20px; 
 }
 
 /* Footer */
@@ -309,17 +309,17 @@ body {
 }
 
 .footer-container {
-    width: 100%; /* added */
+    width: 100%; 
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap; /* added */
-    gap: 30px; /* added */
+    flex-wrap: wrap; 
+    gap: 30px;
 }
 
 .footer-column {
-    flex: 1; /* added */
-    min-width: 200px; /* added */
+    flex: 1;
+    min-width: 200px;
 }
 
 .footer-column li {
@@ -341,7 +341,7 @@ body {
 
 .footer-social {
     display: flex;
-    gap: 12px; /* added */
+    gap: 12px;
 }
 
 .social-icon {
