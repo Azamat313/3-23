@@ -1,75 +1,92 @@
-/* Body */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Container of all page */
+/* Body */
 body {
-    background-color: #000000;
+    font-family: Arial, sans-serif;
     color: #0011ff8f;
+    background-color: #000000;
     text-align: center;
+    margin: 0;
 }
 
-/* Navbar */
+/* Flex Container for Navbar */
 .navbar {
     background: #222;
-    padding: 15px 20px;
+    padding: 1rem;
 }
 
 .nav-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    flex-wrap: wrap;
 }
 
+/* Logo */
 .logo {
     color: rgb(151, 58, 58);
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
+/* Nav Links */
 .nav-links {
     display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
     list-style: none;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 1rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
+/* Button */
 .nav-button {
     background: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 0.8rem 1.5rem;
     border: none;
     cursor: pointer;
+    font-size: 1rem;
 }
 
-/* 🚀 Hero-section*/
-.hero-container {
+/* Hero Section */
+.hero {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+}
+
+.hero-container {
     max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
-    padding: 50px 20px;
 }
 
 .hero-content {
     flex: 1;
-    padding: 20px;
+    padding: 2rem;
+    text-align: center;
 }
 
 .hero-title {
@@ -77,18 +94,20 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 1rem;
 }
 
 .hero-buttons {
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 
-.primary-button, .secondary-button {
-    padding: 12px 20px;
+.primary-button,
+.secondary-button {
+    padding: 0.8rem 1.5rem;
     border: none;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .primary-button {
@@ -100,63 +119,75 @@ body {
     background: transparent;
     border: 2px solid #007bff;
     color: #007bff;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .hero-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
-/* 🔥 Section "Why we?" */
-.features-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+/* Features Section */
+.features {
     max-width: 1200px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 2rem;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .feature-card {
     background: white;
-    padding: 20px;
-    width: 300px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
 }
 
-/* 🎯 Reports */
-.testimonials-container {
+.feature-icon {
+    font-size: 3rem;
+}
+
+/* Testimonials Section */
+.testimonials {
     max-width: 800px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 2rem;
 }
 
 .testimonial-card {
     background: white;
-    padding: 20px;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 🔗 Footer */
+/* Footer Section */
+.footer {
+    background: #222;
+    color: white;
+    padding: 2rem;
+}
+
 .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    padding: 50px 20px;
-    background: #222;
-    color: white;
 }
 
 .footer-column {
     flex: 1;
     min-width: 200px;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .footer-links {
@@ -164,7 +195,7 @@ body {
 }
 
 .footer-links li {
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 .footer-links a {
@@ -172,105 +203,52 @@ body {
     text-decoration: none;
 }
 
+/* Copyright */
 .copyright {
     background: #111;
     color: white;
-    padding: 10px;
+    padding: 1rem;
 }
 
-/* ========================= */
-/* ✅ Adaptation on column*/
-/* ========================= */
-
-/* 🖥  Tablets */
-@media screen and (max-width: 1024px) {
-    .hero-container, .features-container {
-        flex-direction: column; 
-    }
-
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-
-    .feature-card {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Adjustments for Small Screens Using Flexbox */
+footer, .hero-container, .features-container {
+    flex-direction: column;
+    align-items: center;
 }
 
-/* 📱 Smartphones */
-@media screen and (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .hero-container {
-        flex-direction: column; 
-        text-align: center;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .secondary-button {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .features-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature-card {
-        width: 90%;
-    }
+.nav-links {
+    flex-direction: column;
+    margin-top: 1rem;
 }
 
-/* 📲 Small Screens */
-@media screen and (max-width: 480px) {
-    .hero-title {
-        font-size: 1.8rem;
-    }
+.nav-links li {
+    margin: 0.5rem 0;
+}
 
-    .hero-subtitle {
-        font-size: 0.9rem;
-    }
+.hero-title {
+    font-size: 2rem;
+}
 
-    .primary-button, .secondary-button {
-        width: 100%;
-        padding: 10px;
-    }
+.hero-subtitle {
+    font-size: 1rem;
+}
 
-    .feature-card {
-        width: 100%;
-        max-width: 350px;
-    }
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.feature-card {
+    width: 100%;
+    max-width: 350px;
+}
+
+footer .footer-column {
+    min-width: 100%;
+    text-align: center;
+}
+
+footer .footer-links {
+    padding: 0;
 }
