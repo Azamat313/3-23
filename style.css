@@ -274,9 +274,10 @@ body {
 }
 
 .cta-container {
-    width: 1200px;
+    width: 1024px;
     margin: 0 auto;
     text-align: center;
+    max-width: 90%;
 }
 
 .cta-title {
@@ -376,18 +377,13 @@ body {
         font-size: 42px;
     }
     .footer-container {
-        flex-wrap: wrap; 
         justify-content: center;
     }
 
-    .footer-column {
-        width: 50%; 
-        text-align: center;
     }
     .hero-container {
         max-width: 85%; 
     }
-}
 
 @media (max-width: 768px) {
     .hero-container {
